@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--wtf-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--wtf-->
+  
+
+  <title>JaPaN</title>
+
+
+  <!-- JS defer=подгружение скриптов после-->
+  <script src="app.js" defer></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  
+
+  <!-- стили -->
+  <link rel="stylesheet" href="blog.css">
+  <script src="app.js" defer></script> 
+
+
+</head>
+
+
+<body>
+  <!-- меню бургер open-->
+  <div class="navigat">
+    <div class="menu" id="btn">
+      <!-- onclick="myFunction()" -->
+          <button class="header_menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> 
+
+          <div class="menu_nav">
+            <dl class="menu_dl">
+              <dt class="menu_dt">
+                <a class="menu_link" href="index.html">Главная</a>
+              </dt>
+              <dt class="menu_dt">
+                <a class="menu_link" href="level_2/web_map/web_map.html">Карта сайта</a>
+              </dt>
+              <!-- <dt class="menu_dt">
+                <a class="menu_link" href="#bottom">Навигация</a> 
+              </dt> -->
+              <dt class="menu_dt">
+                <a class="menu_link" href="level_2/about_me/about_me.html">Об авторе</a>
+              </dt>
+            </dl>
+          </div> 
+    </div>
+  </div>
+
+  <div class="onesec">
+    <h1></h1>
+  </div>
+
+  
+
+  <!-- контент -->
+  <div class="wrapper">
+    <div class="content">
+      
+      
+      
+      
+      
+      
+      <!-- шапка hero section -->
+      <header class="hero-section">
+        <img class="hero_0" src="img/water_long.png"> 
+        <img data-speed=".65" class="hero_1" src="img/words.png"> 
+        <img data-speed=".8" class="hero_2" src="img/fish_2.png"> 
+        <img class="hero_3" src="img/puziri.png"> 
+
+        <div class="container">
+          <div class="main-header">
+            <h1 class="main-title"></h1>
+          </div>
+        </div>
+      </header>
+      
+      
+      <!-- галерея паралакс -->
+      <div class="port">
+        <div class="container">
+          <main class="gallery">
+            <div data-speed=".9" class="gallery__left">
+              <div class="text-port gallery__item">
+                <h3 class="text-port__h">Япония —— островное государство,</h3>
+                <p class="text-port__p">расположенное в Восточной Азии, на большом
+                  архипилаге, который входит в систему тихоокеанского
+                  вулканического огненного кольца</p>
+              </div>
+              <img src="img/1.jpeg" height="350vh" class="gallery__item">
+              <div class="text-port gallery__item">
+                <h3 class="text-port__h">Это страна контрастов</h3>
+                <p class="text-port__p">возделывающей рис сельской глубинки
+                  и многомиллионного Токио, буддистских
+                  монахов и одержимых модой
+                  тинейджеров, изысканной храмовой
+                  архитектуры и многоэтажных бетонных
+                  коробок</p>
+              </div>
+            </div>
+            <div data-speed="1.5" class="gallery__right">
+              <img src="img/hram2.jpg" height="500vh" class="gallery__item">
+              <img src="img/4.jpg" height="200vh" class="gallery__item">
+              <img src="img/3.jpg" height="300vh" class="gallery__item">
+              <img src="img/6.jpg" height="300vh" class="gallery__item">
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- блоки -->
+      <div class="history_block">
+        <img class="block" src="img/block_history.jpg">
+        <h2 class="h2_block">Культура</h2>
+        <div class="h_visible_block">
+          <span class="h_stick">/</span>
+          <!-- оптимизация -->
+          <!-- после верстки объеденить тексты под один класс, а визуал сделать вторым классом -->
+          <p class="h_block">Очарование вещей, печаль одиночества, приглушенность на грани
+            исчезновения крвсок и звуков, следы времени, вечное в текущем,
+            сломаная ветка. В этой подборке будет рассказано о таких явлениях
+            как "история", "язык", "литература", "искусство".
+          </p>
+        </div>
+        <!-- кнопка на переадресацию имеет второй класс -->
+        <div class="h_read_button"> 
+          <p class="h_read_p_button">
+            <button class="main_btn h_button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span><a class="h_href" href="level_2/culture/culture.html">Продолжить</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="travel_block">
+        <img class="block" src="img/block_travel.jpg">
+        <h2 class="t2_block">Путешествие</h2>
+        <div class="t_visible_block">
+          <span class="t_stick">/</span>
+          <p class="t_block">В блоке «путешествие» речь пойдет о туризме в Японии. 
+            Места, которые стоит посетить, вопрос о проживании, в какие кафе и 
+            рестораны сходить.
+          </p>
+        </div>
+        <div class="t_read_button">
+          <p class="t_read_p_button">
+            <button class="main_btn t_button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span><a class="t_href" href="level_2/travel/travel.html">Продолжить</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    
+      <div class="food_block">
+        <img class="block" src="img/block_food_short.jpg">
+        <h2 class="f2_block">Японская кухня</h2>
+        <div class="f_visible_block">
+          <span class="f_stick">/</span>
+          <p class="f_block">Простота и разнообразие – именно эти качества
+             виртуозно сочетает в себе японская кухня. С одной стороны, 
+             в ее основе всего несколько базовых ингредиентов, а с другой 
+             – десятки и сотни способов их по-разному приготовить.
+          </p>
+        </div>
+        <div class="f_read_button">
+          <p class="f_read_p_button">
+            <button class="main_btn f_button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span><a class="f_href" href="level_2/food/food.html">Продолжить</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="anime_block">
+        <img class="block" src="img/block_anime.jpg">
+        <h2 class="a2_block">АНИМАЦИЯ</h2>
+        <div class="a_visible_block">
+          <span class="a_stick">/</span>
+          <p class="a_block">Аниме… манга… видеоигры…
+          </p>
+        </div>
+        <div class="a_read_button">
+          <p class="a_read_p_button">
+            <button class="main_btn a_button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span><a class="a_href" href="level_2/anime/anime.html">Продолжить</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="cars_block">
+        <img class="block" src="img/block_cars2.jpg">
+        <h2 class="c2_block">АВТОМОБИЛИ</h2>
+        <div class="c_visible_block">
+          <span class="c_stick">/</span>
+          <p class="c_block">Автопром Японии известен во всём мире как
+             одна из самых успешных отраслей японской промышленности. 
+             Японские автомобили, в свою очередь, стали «символом»: надежности, 
+             престижа, комфорта , но не о «комфорте» здесь пойдет речь…
+          </p>
+        </div>
+        <div class="c_read_button">
+          <p class="c_read_p_button">
+            <button class="main_btn c_button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span><a class="c_href" href="level_2/cars/cars.html">Продолжить</a>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- подвал -->
+      
+
+    <footer id="bottom">
+      <div  class="footer">
+       <h4 class="h4_footer_nav">Навигация</h4>
+        <dl class="footer_dl_left">
+          <dt class="footer_dt"><a class="footer_link_topic" href="level_2/culture/culture.html">Культура</a></dt>
+            <dd class="left"><a class="footer_link" href="level_2/culture/culture.html#history">История</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/culture/culture.html#langu">Японский язык</p></a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/culture/culture.html#reads">Литература</p></a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/culture/culture.html#arts">Искусство</p></a></dd>
+          <dt class="footer_dt"><a class="footer_link_topic" href="level_2/travel/travel.html">Путешествие</a></dt>
+            <dd class="left"><a class="footer_link" href="level_2/travel/travel.html">Места, которые стоит посетить</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/travel/travel.html">Блогеры, связанные с Японией</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/travel/travel.html">Проживание</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/travel/travel.html">Питание</a></dd>
+          <dt class="footer_dt"><a class="footer_link_topic" href="level_2/food/food.html">Японская кухня</a></dt>
+            <dd class="left"><a class="footer_link" href="level_2/food/food.html#history_food">Традиционная кухня</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/food/food.html#rull">Этикет</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/food/food.html#eats">Что сейчас едят Японцы</a></dd>
+            <dd class="left"><a class="footer_link" href="level_2/food/food.html#recepts">Рецепты</a></dd>
+        </dl> 
+        <dl class="footer_dl_right">
+          <dt class="footer_dt_right"><a class="footer_link_topic" href="level_2/anime/anime.html">Анимация</a></dt>
+          <dd class="right"><a class="footer_link" href="level_2/anime/anime.html#anime">Аниме</a></dd>
+          <dd class="right"><a class="footer_link" href="level_2/anime/anime.html#anime_history">История аниме и манги</a></dd>
+          <dd class="right"><a class="footer_link" href="level_2/anime/anime.html#games">Видеоигры</a></dd>
+        <dt class="footer_dt_right"><a class="footer_link_topic" href="level_2/cars/cars.html">Автомобили</a></dt>
+          <dd class="right"><a class="footer_link" href="level_2/cars/cars.html">Автомобили 90-80х</a></dd>
+          <dd class="right"><a class="footer_link" href="level_2/cars/cars.html">Современные авто</a></dd>
+        </dl>
+
+        <h4 class="h4_footer_cont">Контакты</h4>
+        <h5 class="h5_footer_cont">Японское посольство</h5>
+        <p class="link_posol">ссылка: (ссылка)</p>
+        <h5 class="h5_footer_cont_2">Контакты автора</h5>
+        <dl class="footer_dl_contacts">
+        <dt class="footer_dt_contacts"><a class="me"><nobr>+7(985)966-xx-xx</nobr></a></dt>
+        <dt class="footer_dt_contacts"><a class="me_2" href="https://vk.com/xxx">https://vk.com/xxx</a></dt>
+        </dl>
+        <p class="something">© «xxxxxxx».
+             Все права защищены. Перепечатка и любое использование материалов возможно только
+              при наличии ссылки на первоисточник.</p>
+          
+        
+
+        <img class="footer_img" src="img/footer_10.jpg">
+      </div>
+    </footer>
+
+
+
+
+      
+    </div> <!-- закрывающий content-->
+  </div> <!-- закрывающий wrapper-->
+</body>
+
+
+
+
+</html>
