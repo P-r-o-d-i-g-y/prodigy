@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--wtf-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--wtf-->
+
+  <script src="../../app.js" defer></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+  <!-- стили -->
+  <link rel="stylesheet" href="food.css">
+  <script src="../../app.js" defer></script> 
+  
+
+  <title>Food</title>
+  </head>
+  
+  
+  <body>
+    <header id="hero"></header>
+    <!-- меню бургер open-->
+  <div class="navigat">
+    <div class="menu" id="btn">
+      <!-- onclick="myFunction()" -->
+          <button class="header_menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> 
+
+          <div class="menu_nav">
+            <dl class="menu_dl">
+              <dt class="menu_dt">
+                <a class="menu_link" href="../../index.html">Главная</a>
+              </dt>
+              <dt class="menu_dt">
+                <a class="menu_link" href="../../level_2/web_map/web_map.html">Карта сайта</a>
+              </dt>
+              <dt class="menu_dt">
+                <a class="menu_link" href="#bottom">Навигация</a> 
+              </dt>
+              <dt class="menu_dt">
+                <a class="menu_link" href="../../level_2/about_me/about_me.html">Об авторе</a>
+              </dt>
+            </dl>
+          </div> 
+    </div>
+  </div>
+
+  <!-- стрелки -->
+    <div class="arrows">
+        <a class="buttons_top_foot" id="to_top" href="#hero" title="вверх страницы">^</a>
+        <a class="buttons_top_foot" id="to_foot" style="rotate:180deg" href="#bottom" title="вниз страницы">^</a>
+    </div>
+
+    <div class="main_hello" >
+        <h1>Японская кухня</h1>
+        <img class="hello_img" src="../../img/food_1.jpg">
+    </div>
+    
+    <!-- реклама -->
+    <div class="ad_div">
+        <div class="ad_block">
+            <h6>Здесь могла быть ваша реклама</h6>
+        </div>
+    </div>
+
+
+    <!-- большой контейнер -->
+    <div class="container_">
+    <!-- контент типо навигации повторяется во всех топиках-->
+        <div class="hello">
+            <p class="one">Отличается предпочтением натуральных, минимально
+                 обработанных продуктов, широким применением морепродуктов,
+                  сезонностью, характерными блюдами, специфическими правилами
+                   оформления блюд, сервировкой, застольным этикетом. Блюда 
+                   японской кухни, как правило, являются ключевой достопримечательностью
+                    для туристов из других стран.</p>
+            <p class="one">На этой странице вы найдете кароткую информацио о 4 темах:</p>
+        </div>
+        <!-- табл с навигацией по стр -->
+        <div class="navi_content">
+            <dl>
+                <dt>
+                <a class="menu_link_" href="#history_food">Традиционная кухня</a>
+                </dt>
+                <dt>
+                <a class="menu_link_" href="#rulls">Этикет</a>
+                </dt>
+                <dt>
+                <a class="menu_link_" href="#eats">Что сейчас едят Японцы</a> 
+                </dt>
+                <dt>
+                <a class="menu_link_" href="#recepts">Рецепты</a>
+                </dt>
+            </dl>
+        </div>
+        <!-- контент------------ -->
+        <div class="content">
+
+            <!-- История -->
+            <div class="histiry_content">
+                <h2 id="history_food">Традиционная кухня</h2>
+                <p>Представляю вам статью, которую полностью можно
+                    прочитать по <a class="a_source" href="https://planetofhotels.com/guide/ru/blog/yaponskaya-kukhnya">ссылке</a>
+                </p>
+                <p>
+                    Японская еда должна соответствовать пяти вкусам гоми — сладкому, соленому, 
+                    острому, кислому и горькому. Но есть и шестой, особый вкус, который кулинары
+                     этой страны умеют мастерски раскрывать — умами. Он характерен для множества 
+                     белковых продуктов и созданных на их основе бульонов.
+                </p>
+                <p>
+                    Во всем мире японская кухня справедливо считается эталоном здорового питания. 
+                    Здесь используют только самые свежие и разнообразные ингредиенты и очень настороженно
+                     относятся к продуктам длительного хранения (исключая ферментированные). Блюда должны
+                      готовиться быстро, просто и, если это возможно, с минимальной термической обработкой,
+                       что позволяет сохранить максимум их природного вкуса и питательной ценности.
+                        Еда подается маленькими порциями, а насыщение достигается за счет большого 
+                        выбора блюд. Любой прием пищи, даже обычный перекус, важен и должен приносить 
+                        пользу и удовольствие. Такая простая на первый взгляд философия вывела 
+                        гастрономические традиции Японии на совершенно новый уровень. Сегодня кухня 
+                        этого государства является мировым достоянием и служит источником вдохновения 
+                        для лучших кулинаров планеты. А знакомство с ней — один из самых прекрасных 
+                        поводов для посещения Страны восходящего солнца.
+                </p>
+
+                <h2 id="rulls">Этикет</h2>
+                <p>
+                    Японский столовый этикет основан на признательности гостей хозяевам за их труд. 
+                    Это проявление японской «философии гостеприимства» — омотэнаси. Безукоризненно 
+                    следуя правилам, можно получить от трапезы незабываемые впечатления.
+                </p>
+                <p>
+                    Основа японской кухни — равновесие и стремление сохранить первозданный внешний вид и вкус ингредиентов,
+                     а не «забивать» его тяжёлыми соусами.
+                     Традиционная трапеза включает пять блюд — суп, три вида закусок и пропаренный рис.
+                      Суп — чаще всего прозрачный бульон с рыбой, курицей или мисо. Закуски могут включать 
+                      любые свежие сезонные ингредиенты. Важно и расположение блюд на столе: слева, на месте,
+                       предназначенном для самого главного блюда, ставится рис, позади него — закуски, а суп — справа.
+                </p>
+                <h3>Палочки не для этого</h3>
+                <img class="img_food" src="../../img/food_2.jpg">
+
+                <p>
+                    Пользоваться палочками просто, но стоит избегать некоторых распространённых ошибок. 
+                    Не используйте палочки как ложку, нож и вилку. Не накалывайте ничего на палочки и ни на
+                     что ими не указывайте. Не надо передвигать палочками по столу тарелки и миски. Два самых
+                      главных «не» при использовании палочек для еды — не втыкать их вертикально в блюдо с 
+                      рисом и не передавать еду «с палочек на палочки».
+                </p>
+                <h3>Как разливать напитки</h3>
+                <p>
+                    Возьмите бутылку этикеткой вверх, правой рукой, придерживая за донышко левой.
+                    Наливайте другим, но не себе. Когда кто-то наливает напиток вам, будет вежливым
+                    придержать и слегка наклонить стакан. В отличие от еды, которую рекомендуется
+                    доедать до конца, напитки можно не допивать: пустой стакан — это стакан, который
+                    нужно наполнить, так что оставьте немного, если не хотите, чтобы вам налили ещё.
+                </p>
+                    <p>
+                        <a class="a_source" href="https://visitjapan.ru/guide/japanese-food-etiquette#:~:text=%D0%9D%D0%B5%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%20%D0%BF%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B8%20%D0%BA%D0%B0%D0%BA%20%D0%BB%D0%BE%D0%B6%D0%BA%D1%83,%C2%AB%D1%81%20%D0%BF%D0%B0%D0%BB%D0%BE%D1%87%D0%B5%D0%BA%20%D0%BD%D0%B0%20%D0%BF%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B8%C2%BB.">Ссылка</a>
+                        на источник
+                    </p>
+                    
+                    <img class ="img_food img_food_2" src="../../img/7.jpg" alt="">
+                    <h2 id="eats">Что сейчас едят Японцы</h2>
+                    <p class="">В Японии считается, что должно быть три 
+                        приема пищи и в каждом из них обязательно должен быть рис. 
+                    </p>
+                    <h3>Завтрак</h3>
+                    <p>Современные японцы часто едят блюда европейской кухни, 
+                        в том числе и на завтрак. Но традиционный японский завтрак составляют:</p>
+                    <ul>
+                        <li>Вареный рис и натто. Натто представляет собой соевые бобы,
+                             их заправляют соусом и кладут сверху<br> на рис. Так как натто
+                              очень богато растительным белком и надолго утоляет голод,
+                               это блюдо популярно<br> именно на завтрак.
+                        </li>
+                        <li>
+                            Тамаго-яки – омлет, свернутый в рулет. От привычного нам омлета тамаго-яки 
+                            отличается тем, что <br>в него наливают немного соевого соуса с добавлением сахара.
+                        </li>
+                        <li>
+                            Мисосиру – суп из бобовой пасты мисо. Для его приготовления используют
+                             соевый сыр тофу,<br> водоросли вакамэ и другие ингредиенты. Состав супа
+                              во многом зависит от сезона и региона<br> проживания японца.
+                        </li>
+                        <li>
+                            Чай. В основном в Японии пьют зеленый чай. Без чаепития не обходится ни одна трапеза.
+                        </li>
+                    </ul>
+                    <h3>Обед</h3>
+                    <p>
+                        Японцы предпочитают легкие обеды. Его основу, конечно, составляет рис. К нему подают рыбу, 
+                        которая может быть сырой, приготовленной на гриле или маринованной.
+                    </p>
+                    <p>
+                        Дополнять обед могут вареные овощи или салаты. В качестве заправки в салатах используют
+                         рисовый уксус или соевый соус. Майонез практически никогда не использую в традиционной кухне.
+                          В конце обеда пьют чай.
+                    </p>
+                    <p>
+                        Сейчас в Японии все больше ощущаются западные веяния. Поэтому часто 
+                        можно встретить молодых японцев, обедающих фаст-фудом.
+                    </p>
+
+                    <h3>Ужин</h3>
+                    <p>
+                        Ужинают японцы достаточно плотно. Стандартный ужин включает:
+                    </p>
+                    <ul>
+                        <li>
+                            Рис или лапшу.
+                        </li>
+                        <li>
+                            Суп. Японцы очень любят супы. Чаще всего готовят
+                             мисосиру и суимоно (прозрачные супы).<br> Они 
+                             могут быть рыбными, мясными, овощными. Для
+                              большинства супов все ингредиенты и<br> бульон
+                               варятся отдельно друг от друга и соединяются
+                                только перед подачей на стол. <br>Примечательно, 
+                                что супы японцы едят палочками, вылавливая сначала
+                                 кусочки овощей и мяса. <br>Затем выпивают бульон прямо из чашки.
+                        </li>
+                        <li>
+                            Мясо или рыбу в любом виде.
+                        </li>
+                        <li>
+                            Овощи, которые могут быть приготовлены на пару.
+                        </li>
+                    </ul>
+                    <p>
+                        <a class="a_source" href="https://amazingjapan.info/chto-edyat-yaponcy-v-povsednevnoj-zhizni/">Ссылка</a>
+                        на источник
+                    </p>
+
+
+                    <h2 id="recepts">Рецепты</h2>
+                    <p class="">
+                        К сожелению данная статья в разработке
+                    </p>
+
+
+
+            </div>
+        </div>
+</div><!--закрыв большой контайнер-->
+
+
+    <!-- подвал -->
+      
+
+    <footer id="bottom">
+      <div  class="footer">
+       <h4 class="h4_footer_nav">Навигация</h4>
+        <dl class="footer_dl_left">
+          <dt class="footer_dt"><a class="footer_link_topic" href="../../level_2/culture/culture.html">Культура</a></dt>
+            <dd class="left"><a class="footer_link" href="../../level_2/culture/culture.html#history">История</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/culture/culture.html#langu">Японский язык</p></a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/culture/culture.html#reads">Литература</p></a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/culture/culture.html#arts">Искусство</p></a></dd>
+          <dt class="footer_dt"><a class="footer_link_topic" href="../../level_2/travel/travel.html">Путешествие</a></dt>
+            <dd class="left"><a class="footer_link" href="../../level_2/travel/travel.html">Места, которые стоит посетить</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/travel/travel.html">Блогеры, связанные с Японией</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/travel/travel.html">Проживание</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/travel/travel.html">Питание</a></dd>
+          <dt class="footer_dt"><a class="footer_link_topic" href="../../level_2/food/food.html">Японская кухня</a></dt>
+            <dd class="left"><a class="footer_link" href="../../level_2/food/food.html#history_food">Традиционная кухня</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/food/food.html#rulls">Этикет</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/food/food.html#eats">Что сейчас едят Японцы</a></dd>
+            <dd class="left"><a class="footer_link" href="../../level_2/food/food.html#recepts">Рецепты</a></dd>
+        </dl> 
+        <dl class="footer_dl_right">
+          <dt class="footer_dt_right"><a class="footer_link_topic" href="../../level_2/anime/anime.html">Анимация</a></dt>
+          <dd class="right"><a class="footer_link" href="../../level_2/anime/anime.html#anime">Аниме</a></dd>
+          <dd class="right"><a class="footer_link" href="../../level_2/anime/anime.html#anime_history">История аниме и манги</a></dd>
+          <dd class="right"><a class="footer_link" href="../../level_2/anime/anime.html#games">Видеоигры</a></dd>
+        <dt class="footer_dt_right"><a class="footer_link_topic" href="../../level_2/cars/cars.html">Автомобили</a></dt>
+          <dd class="right"><a class="footer_link" href="../../level_2/cars/cars.html">Автомобили 90-80х</a></dd>
+          <dd class="right"><a class="footer_link" href="../../level_2/cars/cars.html">Современные авто</a></dd>
+        </dl>
+
+        <h4 class="h4_footer_cont">Контакты</h4>
+        <h5 class="h5_footer_cont">Японское посольство</h5>
+        <p class="link_posol">ссылка: (ссылка)</p>
+        <h5 class="h5_footer_cont_2">Контакты автора</h5>
+        <dl class="footer_dl_contacts">
+        <dt class="footer_dt_contacts"><a class="me"><nobr>+7(985)966-xx-xx</nobr></a></dt>
+        <dt class="footer_dt_contacts"><a class="me_2" href="https://vk.com/xxx">https://vk.com/xxx</a></dt>
+        </dl>
+        <p class="something">© «xxxxxxx».
+             Все права защищены. Перепечатка и любое использование материалов возможно только
+              при наличии ссылки на первоисточник.</p>
+          
+        
+
+        <img class="footer_img" src="../../img/footer_10.jpg">
+        <img class="footer_img_no_blur" src="../../img/footer_10.jpg">
+      </div>
+    </footer>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
