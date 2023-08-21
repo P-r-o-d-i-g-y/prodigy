@@ -16,20 +16,20 @@ updateWidthDisplay();
 // Привязываем обработчик события для обновления при изменении размера окна
 window.addEventListener("resize", updateWidthDisplay);
 // --------------------------------------------
-function redirectToPage() {
-    var targetURL;
+// function redirectToPage() {
+//     var targetURL;
   
-    if (window.innerWidth <= 1400) {
-      targetURL = 'no_web.html';
-    } else {
-      targetURL = 'index.html';
-    }
+//     if (window.innerWidth <= 1400) {
+//       targetURL = 'no_web.html';
+//     } else {
+//       targetURL = 'index.html';
+//     }
   
-    // Проверка текущего URL перед перенаправлением
-    if (window.location.href.indexOf(targetURL) === -1) {
-      window.location.href = targetURL;
-    }
-  }
+//     // Проверка текущего URL перед перенаправлением
+//     if (window.location.href.indexOf(targetURL) === -1) {
+//       window.location.href = targetURL;
+//     }
+//   }
   
   // Вызываем функцию при загрузке страницы и изменении размера окна
   // window.addEventListener('load', redirectToPage);
@@ -59,8 +59,8 @@ $(document).ready(function() {
 
 
 
-// регистрация плагинов
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+// // регистрация плагинов
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
 
