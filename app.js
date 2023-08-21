@@ -3,6 +3,23 @@
 //     document.body.style.cssText = `--scrollTop: ${this.scrollY}px` //переменная ccs, используются обратные кавычки
 // })
 
+
+// Получаем ссылку на элемент <div>
+const widthDisplayDiv = document.getElementById("widthDisplay");
+
+// Обновляем содержимое <div> текущим значением внутренней ширины окна
+function updateWidthDisplay() {
+    widthDisplayDiv.textContent = `${window.innerWidth}`;
+}
+
+// Начальное обновление при загрузке страницы
+updateWidthDisplay();
+
+// Привязываем обработчик события для обновления при изменении размера окна
+window.addEventListener("resize", updateWidthDisplay);
+
+
+
 // --------------------------------------------меню
 
 function redirectToPage() {
