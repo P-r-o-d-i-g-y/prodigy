@@ -72,7 +72,7 @@ if (ScrollTrigger.isTouch !==1) { //определение телефон или
         smooth: 1.5,
         effects:true
     
-    });
+    })
     var slideIndex = 1;
     showSlides(slideIndex);
 
