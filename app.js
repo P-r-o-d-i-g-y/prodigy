@@ -2,40 +2,29 @@
 // window.addEventListener('scroll', e => {
 //     document.body.style.cssText = `--scrollTop: ${this.scrollY}px` //переменная ccs, используются обратные кавычки
 // })
-// Получаем ссылку на элемент <div>
-const widthDisplayDiv = document.getElementById("widthDisplay");
 
-// Обновляем содержимое <div> текущим значением внутренней ширины окна
-function updateWidthDisplay() {
-    widthDisplayDiv.textContent = ${window.innerWidth};
-};
+// --------------------------------------------меню
 
-// Начальное обновление при загрузке страницы
-updateWidthDisplay();
-
-// Привязываем обработчик события для обновления при изменении размера окна
-window.addEventListener("resize", updateWidthDisplay);
-// --------------------------------------------
-// function redirectToPage() {
-//     var targetURL;
+function redirectToPage() {
+    var targetURL;
   
-//     if (window.innerWidth <= 1400) {
-//       targetURL = 'no_web.html';
-//     } else {
-//       targetURL = 'index.html';
-//     }
+    if (window.innerWidth <= 1400) {
+      targetURL = 'no_web.html';
+    } else {
+      targetURL = 'index.html';
+    }
   
-//     // Проверка текущего URL перед перенаправлением
-//     if (window.location.href.indexOf(targetURL) === -1) {
-//       window.location.href = targetURL;
-//     }
-//   }
+    // Проверка текущего URL перед перенаправлением
+    if (window.location.href.indexOf(targetURL) === -1) {
+      window.location.href = targetURL;
+    }
+  }
   
   // Вызываем функцию при загрузке страницы и изменении размера окна
-  // window.addEventListener('load', redirectToPage);
-  // window.addEventListener('resize', redirectToPage);
+  window.addEventListener('load', redirectToPage);
+  window.addEventListener('resize', redirectToPage);
 
-
+  
 $(document).ready(function() {
     $(".header_menu_btn").on('click',function(){ // При клике по элементу с class=".header_menu_btn"
         $(".menu").toggleClass("open"); // Если у него есть class="open", уберет его, а если нет, то добавит.
@@ -54,12 +43,12 @@ $(document).ready(function() {
             $("#to_foot").fadeIn();
         }
     });
-});
+})
 
 
 
 
-// // регистрация плагинов
+// регистрация плагинов
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
@@ -72,7 +61,7 @@ if (ScrollTrigger.isTouch !==1) { //определение телефон или
         smooth: 1.5,
         effects:true
     
-    })
+    });
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -101,6 +90,11 @@ if (ScrollTrigger.isTouch !==1) { //определение телефон или
     }
     
 }
+
+
+
+
+
 
 
 
