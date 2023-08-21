@@ -5,6 +5,10 @@
   box-sizing: border-box; /*контейнер внутри*/
   scroll-behavior: smooth;
 }
+#widthDisplay{
+	height: 100vh;
+	position: absolute;
+}
 
 /* шрифты */
 @font-face {
