@@ -20,47 +20,47 @@ window.addEventListener("resize", updateWidthDisplay);
 
 
 
-// // --------------------------------------------меню
+// --------------------------------------------меню
 
-// function redirectToPage() {
-//     var targetURL;
+function redirectToPage() {
+    var targetURL;
   
-//     if (window.innerWidth <= 1400) {
-//       targetURL = 'no_web.html';
-//     } else {
-//       targetURL = 'index.html';
-//     }
+    if (window.innerWidth <= 1450) {
+      targetURL = 'no_web.html';
+    } else {
+      targetURL = 'index.html';
+    }
   
-//     // Проверка текущего URL перед перенаправлением
-//     if (window.location.href.indexOf(targetURL) === -1) {
-//       window.location.href = targetURL;
-//     }
-//   }
+    // Проверка текущего URL перед перенаправлением
+    if (window.location.href.indexOf(targetURL) === -1) {
+      window.location.href = targetURL;
+    }
+  }
   
-//   // Вызываем функцию при загрузке страницы и изменении размера окна
-//   window.addEventListener('load', redirectToPage);
-//   window.addEventListener('resize', redirectToPage);
+  // Вызываем функцию при загрузке страницы и изменении размера окна
+  window.addEventListener('load', redirectToPage);
+  window.addEventListener('resize', redirectToPage);
 
   
-// $(document).ready(function() {
-//     $(".header_menu_btn").on('click',function(){ // При клике по элементу с class=".header_menu_btn"
-//         $(".menu").toggleClass("open"); // Если у него есть class="open", уберет его, а если нет, то добавит.
-//     });
+$(document).ready(function() {
+    $(".header_menu_btn").on('click',function(){ // При клике по элементу с class=".header_menu_btn"
+        $(".menu").toggleClass("open"); // Если у него есть class="open", уберет его, а если нет, то добавит.
+    });
 
         
-//     $("to_foot").fadeIn();
-//     $("#to_top").fadeOut();
-//     $(window).scroll(function(){
-//         var scroll = $(window).scrollTop();
-//         if (scroll > 1500) {
-//             $("#to_top").fadeIn();
-//             $("#to_foot").fadeOut();
-//         } else {
-//             $("#to_top").fadeOut();
-//             $("#to_foot").fadeIn();
-//         }
-//     });
-// })
+    $("to_foot").fadeIn();
+    $("#to_top").fadeOut();
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 1500) {
+            $("#to_top").fadeIn();
+            $("#to_foot").fadeOut();
+        } else {
+            $("#to_top").fadeOut();
+            $("#to_foot").fadeIn();
+        }
+    });
+})
 
 
 
@@ -70,43 +70,43 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
 
-// // для телефонов условие
-// if (ScrollTrigger.isTouch !==1) { //определение телефон или нет
-//     ScrollSmoother.create({
-//         wrapper : '.wrapper', //оболочка
-//         content: '.content', //контент в оболочке
-//         smooth: 1.5,
-//         effects:true
+// для телефонов условие
+if (ScrollTrigger.isTouch !==1) { //определение телефон или нет
+    ScrollSmoother.create({
+        wrapper : '.wrapper', //оболочка
+        content: '.content', //контент в оболочке
+        smooth: 1.5,
+        effects:true
     
-//     });
-//     var slideIndex = 1;
-//     showSlides(slideIndex);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-//     function plusSlides(n) {
-//     showSlides(slideIndex += n);
-//     }
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
 
-//     function currentSlide(n) {
-//     showSlides(slideIndex = n);
-//     }
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
 
-//     function showSlides(n) {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     var dots = document.getElementsByClassName("dot");
-//     if (n > slides.length) {slideIndex = 1}    
-//     if (n < 1) {slideIndex = slides.length}
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";  
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";  
-//     dots[slideIndex-1].className += " active";
-//     }
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
     
-// }
+}
 
 
 
