@@ -24,7 +24,20 @@
 
 function redirectToPage() {
     var targetURL;
-  
+
+    // Добавьть исключения для перенаправления на определенные страницы
+    if (
+        window.location.href.indexOf('web_map.html') !== -1 ||
+        window.location.href.indexOf('about_me.html') !== -1||
+        window.location.href.indexOf('anime.html') !== -1||
+        window.location.href.indexOf('culture.html') !== -1||
+        window.location.href.indexOf('food.html') !== -1||
+        window.location.href.indexOf('cars.html') !== -1||
+        window.location.href.indexOf('travel.html') !== -1
+    ) {
+        return; // Не выполнять перенаправление на эти страницы
+    }
+    
     if (window.innerWidth <= 1500) {
       targetURL = 'no_web.html';
     } else {
