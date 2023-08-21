@@ -65,8 +65,8 @@ window.addEventListener("resize", updateWidthDisplay);
 
 
 
-// // регистрация плагинов
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+// регистрация плагинов
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
 
