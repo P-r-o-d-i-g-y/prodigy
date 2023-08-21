@@ -6,6 +6,8 @@
   scroll-behavior: smooth;
 }
 div#widthDisplay{
+	top: 0px;
+	left: 0px;
 	height: 100vh;
 	position: absolute;
 }
