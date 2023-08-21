@@ -5,7 +5,7 @@
   box-sizing: border-box; /*контейнер внутри*/
   scroll-behavior: smooth;
 }
-#widthDisplay{
+div#widthDisplay{
 	height: 100vh;
 	position: absolute;
 }
