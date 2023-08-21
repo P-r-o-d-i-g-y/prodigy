@@ -6,9 +6,9 @@
 const widthDisplayDiv = document.getElementById("widthDisplay");
 
 // Обновляем содержимое <div> текущим значением внутренней ширины окна
-function updateWidthDisplay() {
-    widthDisplayDiv.textContent = бла бла: ${window.innerWidth}px;
-}
+// function updateWidthDisplay() {
+//     widthDisplayDiv.textContent = бла бла: ${window.innerWidth}px;
+// }
 
 // Начальное обновление при загрузке страницы
 updateWidthDisplay();
