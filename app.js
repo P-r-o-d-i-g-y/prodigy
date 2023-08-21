@@ -2,8 +2,20 @@
 // window.addEventListener('scroll', e => {
 //     document.body.style.cssText = `--scrollTop: ${this.scrollY}px` //переменная ccs, используются обратные кавычки
 // })
+// Получаем ссылку на элемент <div>
+const widthDisplayDiv = document.getElementById("widthDisplay");
 
-// --------------------------------------------меню
+// Обновляем содержимое <div> текущим значением внутренней ширины окна
+function updateWidthDisplay() {
+    widthDisplayDiv.textContent = Внутренняя ширина окна: ${window.innerWidth}px;
+}
+
+// Начальное обновление при загрузке страницы
+updateWidthDisplay();
+
+// Привязываем обработчик события для обновления при изменении размера окна
+window.addEventListener("resize", updateWidthDisplay);
+// --------------------------------------------
 function redirectToPage() {
     var targetURL;
   
@@ -20,8 +32,8 @@ function redirectToPage() {
   }
   
   // Вызываем функцию при загрузке страницы и изменении размера окна
-  window.addEventListener('load', redirectToPage);
-  window.addEventListener('resize', redirectToPage);
+  // window.addEventListener('load', redirectToPage);
+  // window.addEventListener('resize', redirectToPage);
 
 
 $(document).ready(function() {
