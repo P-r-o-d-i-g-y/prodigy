@@ -54,7 +54,7 @@ $(document).ready(function() {
             $("#to_foot").fadeIn();
         }
     });
-})
+});
 
 
 
