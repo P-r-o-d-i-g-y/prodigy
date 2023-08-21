@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*контейнер внутри*/
+    scroll-behavior: smooth;
+  }
+
+  /* шрифты */
+
+@font-face {
+	font-family: HelveticaNeue-U;
+	src: url(font/HelveticaNeueCyr-UltraLight.woff2);
+}
+
+/* шрифты по текстам */
+p {
+	font-family: HelveticaNeue-U;
+  color: #e6e7ff;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.2rem;
+  left: 3vw;
+  top: 25%;
+  position: absolute;
+}
+
+
+body {
+    background-color: #242028;
+    overflow-x: hidden; /*выключает скрол*/
+  }
+
+  
