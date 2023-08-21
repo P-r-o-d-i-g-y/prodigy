@@ -4,19 +4,19 @@
 // })
 
 
-// Получаем ссылку на элемент <div>
-const widthDisplayDiv = document.getElementById("widthDisplay");
+// // Получаем ссылку на элемент <div>
+// const widthDisplayDiv = document.getElementById("widthDisplay");
 
-// Обновляем содержимое <div> текущим значением внутренней ширины окна
-function updateWidthDisplay() {
-    widthDisplayDiv.textContent = `${window.innerWidth}`;
-};
+// // Обновляем содержимое <div> текущим значением внутренней ширины окна
+// function updateWidthDisplay() {
+//     widthDisplayDiv.textContent = `${window.innerWidth}`;
+// };
 
-// Начальное обновление при загрузке страницы
-updateWidthDisplay();
+// // Начальное обновление при загрузке страницы
+// updateWidthDisplay();
 
-// Привязываем обработчик события для обновления при изменении размера окна
-window.addEventListener("resize", updateWidthDisplay);
+// // Привязываем обработчик события для обновления при изменении размера окна
+// window.addEventListener("resize", updateWidthDisplay);
 
 
 
@@ -25,7 +25,7 @@ window.addEventListener("resize", updateWidthDisplay);
 function redirectToPage() {
     var targetURL;
   
-    if (window.innerWidth <= 1450) {
+    if (window.innerWidth <= 1500) {
       targetURL = 'no_web.html';
     } else {
       targetURL = 'index.html';
